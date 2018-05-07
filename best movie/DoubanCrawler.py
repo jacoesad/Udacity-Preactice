@@ -136,7 +136,7 @@ def generate_output(categories_list):
                                                       df[df['type'] == '剧情']['location'].value_counts().values[i]/len(df[df['type'] == '剧情'])))
 
            
-    with open('output.txt','w') as f:
+    with open('output.txt','w', encoding="utf-8") as f:
         for element in output_txt:
             f.write(element + '\n')
         
